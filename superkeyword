@@ -1,0 +1,27 @@
+class Parent{
+     int num=7;
+     Parent(){
+         System.out.println("Parent class constructor called..");
+     }
+     void display(){
+         System.out.println("This is a parent class method..");
+     }
+}
+class Child extends Parent{
+     int num=1;
+     Child(){
+          super();
+          System.out.println("Child class constructor is called..");
+     }
+     void show(){
+          System.out.println("child num:" + num);
+          System.out.println("parent num:" +super.num);
+          super.display();
+     }
+}
+class SuperKeyWord{
+     public static void main(String[] args){
+          Child obj=new Child();
+          obj.show();
+     }
+}
