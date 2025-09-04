@@ -1,0 +1,32 @@
+class A{
+    void fun1(){
+        System.out.println(" fun1 in class A");
+    }
+}
+class B extends A{
+    void fun1(){
+         System.out.println("fun1 in class B");
+    }
+    void fun2(){
+         System.out.println("fun2 in class B");
+    }
+}
+class C extends B{
+    void fun1(){
+         System.out.println("fun1 in class C");
+    }
+    void fun2(){
+         System.out.println("fun2 in class C");
+    }
+    void fun3(){
+         System.out.println("fun3 in class C");
+    }
+}
+class Main{
+     public static void main(String[] args){
+         A a=new B();
+         a.fun1();
+     }
+}
+
+    
